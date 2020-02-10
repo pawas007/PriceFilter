@@ -1,0 +1,61 @@
+input[type=range] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 1px;
+    outline: none;
+    background: linear-gradient(green, green) no-repeat center;
+    background-size: 100% 2px;
+    pointer-events: none;
+}
+
+input[type=range]:active,
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    margin: 5px 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: all;
+    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+
+.range-price {
+    position: relative;
+    height: 50px;
+}
+
+.range-price input[type=range] {
+    position: absolute;
+}
+
+.range-price input[type=range]:nth-child(2) {
+    background: none;
+}
+
+.number-price input {
+    padding: 6px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+    max-width: 40%;
+}
+
+.number-price input:focus {
+    border: 1px solid green;
+}
+
+.price-filter {
+    max-width: 228px;
+    margin: 200px auto;
+}
